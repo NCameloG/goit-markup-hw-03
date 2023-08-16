@@ -1,11 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 :root {
   --selected-color: rgb(33, 150, 243);
   --background-color: rgb(47, 48, 58, 1);
   --backgroundbutton-color: rgb(245, 244, 250, 1);
   --textcolor-color: rgb(33, 33, 33);
 }
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* HEADER */
   .navIconFull {
@@ -33,13 +34,13 @@
   color: rgb(117, 117, 117);
 }
 .navSection{
-    display: flex;
-    gap: 16px;
-    align-items: center;
+  display: flex;
+  gap: 50px;
+  align-items: center;
 }
 .navBox{
   display: flex;
-  gap: 344px;
+  gap: 300px;
   justify-content: space-between;
 }
 .navIcon{
@@ -66,6 +67,7 @@ body {
   height: 600px;
   display: flex;
   justify-content: center;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .mainTheme{
   display: flex;
@@ -157,14 +159,40 @@ box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0
   flex-wrap: wrap;
   gap: 30px;
 }
+.filter{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+.filterButton {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.88; /*se calcula dividiendo el line-height / font-size*/
+  letter-spacing: 0.03em; /*se coloca el valor en decimales*/
+  background-color: var(--backgroundbutton-color);
+  border-style: hidden;
+  border-radius: 4px;
+  cursor: pointer;
+}
 /* BODY */
 
 /* FOOTER */
+.footerBox{
+  display: flex;
+  gap: 14px;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-width: 250px;
+}
 .footerList{
   display: flex;
-  gap: 2px;
+  gap: 9px;
   flex-direction: column;
   max-width: 250px ;
+  padding: 0;
 }
 .ubication {
   color: rgb(255, 255, 255);
@@ -183,6 +211,7 @@ box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0
 }
 .footer {
   background-color: var(--background-color);
+  padding: 45px;
 }
 .footerIconFull {
   color: rgb(255, 255, 255);
@@ -199,11 +228,11 @@ box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0
 }
 /* FOOTER */
 
-/*Contenido general*/
+/*GENERAL CONTENT*/
 .container {
   width: 1200px;
   margin: auto;
-  padding:15px;
+  padding: 15px;
 }
 .section{
   padding: 94px 0;
@@ -237,7 +266,6 @@ box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0
   line-height: 1.7;
   letter-spacing: 0.03em;
 }
-
 .iconName {
   color: var(--selected-color);
   font-family: 'Raleway', sans-serif;
@@ -261,23 +289,14 @@ box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0
 .link:hover,
 .link:focus {
   color: var(--selected-color);
-}
-.filterButton {
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.88; /*se calcula dividiendo el line-height / font-size*/
-  letter-spacing: 0.03em; /*se coloca el valor en decimales*/
-  background-color: var(--backgroundbutton-color);
-  border-style: hidden;
-  border-radius: 4px;
-  cursor: pointer;
-}
-.button:hover,
-.button:focus,
-.button:active {
+  }
+
+.filterButton:hover,
+.filterButton:focus,
+.filterButton:active {
   color: rgb(255, 255, 255);
   background-color: var(--selected-color);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
 }
 
 .cardSet {
