@@ -169,7 +169,7 @@ body {
   justify-content: center;
 }
 .filterClass {
-  padding: 6px;
+  padding: 6px 24px;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.6; /*se calcula dividiendo el line-height / font-size*/
